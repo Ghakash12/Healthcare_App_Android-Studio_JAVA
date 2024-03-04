@@ -1,0 +1,2 @@
+# Healthcare_App_Android-Studio_JAVA
+design and development of a user-centric health application, empowering users to easily manage health information, schedule appointments, and track medications, leading to heightened health awareness, streamlined medical service access, and a significant improvement in overall health outcomes.
