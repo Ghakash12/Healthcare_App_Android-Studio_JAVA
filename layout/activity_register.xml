@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lg"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/frr"
+        android:transitionName="logo_image"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="WELCOME"
+        android:textColor="#000"
+        android:transitionName="logo_text"
+        android:textSize="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp to start your new Life"
+        android:fontFamily="@font/acme"
+        android:transitionName="logo_slogan"
+        android:textSize="18dp"/>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/buttonbookappoint"
+        android:layout_width="221dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/acme"
+        android:text="Register"
+        android:layout_marginLeft="70dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextregconsfess" />
+
+    <TextView
+        android:id="@+id/textViewExitUser"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/amarante"
+        android:text="Alrady Have an Account? LogIn"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonbookappoint" />
+
+</LinearLayout>

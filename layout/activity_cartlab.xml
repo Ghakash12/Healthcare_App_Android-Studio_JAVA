@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ltd"
+    tools:context=".CartlabActivity">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="99dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/frr"
+            android:transitionName="logo_image"
+            app:layout_constraintEnd_toStartOf="@+id/titleHome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/alegreya_sc"
+            android:text="Health Care"
+            android:textColor="#000000"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textViewapptitle"
+            android:layout_width="280dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/aref_ruqaa"
+            android:text="Lab Test Cart Item"
+            android:textAlignment="center"
+            android:textColor="#040404"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.598"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleHome" />
+
+        <TextView
+            android:id="@+id/textViewBMCcarttotal"
+            android:layout_width="220dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/aref_ruqaa"
+            android:text="Total Cost : 2710"
+            android:textColor="#040404"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#FFFFFF"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.538"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ListViewHA" />
+
+        <ListView
+            android:id="@+id/ListViewHA"
+            android:layout_width="398dp"
+            android:layout_height="344dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewapptitle" />
+
+        <TextView
+            android:id="@+id/textViewdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Select Deliver Date"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/buttonBMCcartappdate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.236"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Select DeliverTime"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/buttonBMCcartapptime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.818"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBMCcarttotal"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/buttonBMCcartappdate"
+            style="?android:spinnerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="MM/DD/YYYY"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.187"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBMCcarttotal" />
+
+        <Button
+            android:id="@+id/buttonBMCcartapptime"
+            style="?android:spinnerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="HH/MM"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.806"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBMCcarttotal" />
+
+        <Button
+            android:id="@+id/buttonBMCcartappback"
+            android:layout_width="148dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/acme"
+            android:text="Back"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonBMCcartappdate" />
+
+        <Button
+            android:id="@+id/buttonBMCcartcheckout"
+            android:layout_width="148dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/acme"
+            android:text="Checkout"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.924"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonBMCcartapptime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
